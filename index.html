@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="css/socialflair.css">
+</head>
+<body>
+  <div id='twitterFlair'></div>
+  <div id='githubFlair'></div>
+  <div id='facebookFlair'></div>
+  
+  <script src='js/jquery.min.js'></script>
+  <script src='js/jquery.socialflair.js'></script>		
+  <script>
+    $(function () {
+      $('#twitterFlair').socialFlair('twitter', 'username', {});
+      $('#githubFlair').socialFlair('github', 'username', {});
+      $('#facebookFlair').socialFlair('facebook', 'username', { 
+        clientId : 'clientId', 
+        clientSecret : 'clientSecrete'
+      });
+    });
+  </script>	
+</body>
+</html>
+

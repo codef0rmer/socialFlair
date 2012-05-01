@@ -1,0 +1,95 @@
+.sfTable {
+  display : table;
+  border-collapse: collapse;
+  width : 207px;
+  height : 57px;
+}
+.sfTwitter {
+  background : url(../img/twitter-watermark.png) no-repeat right bottom;
+  border : 1px solid #CCCCCC;
+  background-color : #F9F9F9;
+}
+.sfFacebook {
+  background : url(../img/facebook-watermark.gif) no-repeat right bottom;
+  border : 1px solid #C4CDE0;
+  background-color : #EDEFF4; 
+}
+.sfGithub {
+  background : url(../img/github-watermark.gif) no-repeat right bottom;
+  border : 1px solid #D4D4D4;
+  background-color: #ececec;
+}
+.sfRow {
+  display : table-row;
+  width : 100%;
+}
+.sfCell1 {
+  display : table-cell;
+  width : 48px;
+  padding : 4px 0px 0px 5px;
+}
+.sfCell2 {
+  display : table-cell;
+  vertical-align : top;
+  text-align : left;
+  padding-left : 10px;
+  padding-top : 3px;
+  width : 146px;
+}
+.sfCell2 div.sfHandle {
+  font : 13px "Tahoma",Helvetica,Arial,sans-serif;
+  font-weight : bold;
+  margin-right : 5px;
+  width : 140px;
+  word-wrap: break-word;
+}
+.sfTwitter div.sfHandle {
+  color : #0084B4;
+}
+.sfFacebook div.sfHandle {
+  color : #627AAD;
+}
+.sfGithub div.sfHandle {
+  color : #333;
+}
+.sfCell2 div.sfFans {
+  font : 11px "Tahoma",Helvetica,Arial,sans-serif;
+  color : #999;
+  font-weight : bold;
+  padding-top : 5px;
+}
+.sfCell2 div.sfFans span { padding-right : 10px; }
+.sfCell2 div.sfFans span.hireable { color : #A229A9; }
+.sfTwitter .sfCell2 div.sfFans span.following { 
+  background : url(../img/twitter.ico) no-repeat left center; 
+  padding-left : 20px;
+}
+.sfTwitter .sfCell2 div.sfFans span.followers { 
+  background : url(../img/twitterr.ico) no-repeat left center; 
+  padding-left : 20px;
+}
+.sfGithub .sfCell2 div.sfFans span.public_repos { 
+  background : url(../img/github_repos.gif) no-repeat left center; 
+  padding-left : 20px;
+}
+.sfGithub .sfCell2 div.sfFans span.followers { 
+  background : url(../img/githubr.ico) no-repeat left center; 
+  padding-left : 20px;
+}
+.sfFacebook .sfCell2 div.sfFans span.following { 
+  background : url(../img/friends.gif) no-repeat left center; 
+  padding-left : 20px;
+}
+img.ico {
+  vertical-align : middle;
+  margin-right : 5px;
+}
+img.sfProfilePic {
+  -webkit-border-radius: 4px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+  border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4+, iOS 4, Android 2.1+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+a.sfLink {
+  text-decoration: none;
+}
