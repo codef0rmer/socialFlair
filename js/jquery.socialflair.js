@@ -1,3 +1,32 @@
+/*!
+ * jQuery socialFlair - Stackoverflow like User Flairs to showcase your 
+ * Social Profiles
+ * ---------------------------------------------------------------------
+ *
+ * This is a simple jQuery plugin which lets you embed social flairs 
+ * into your personal website or blog.
+ *
+ * Licensed under Mozilla Public License
+ *
+ * @version        1.0.0
+ * @since          2012.05.01
+ * @author         Amit Gharat a.k.a. codef0rmer
+ * @blog           http://goo.gl/frl5a
+ * @twitter        twitter.com/codef0rmer
+ *
+ * Usage:
+ * ---------------------------------------------------------------------
+ * Twitter Flair: 
+ *    $(ele).socialFlair('twitter', 'twitterUsername', {});
+ * 
+ * Github Flair:
+ *    $(ele).socialFlair('github', 'githubUsername', {});
+ * 
+ * Facebook Flair:
+ *    Create an App and get the details here: https://developers.facebook.com/apps
+ *    $(ele).socialFlair('facebook', 'facebookUsername', {clientId : clientId, clientSecret : clientSecrete});
+ *
+ */
 (function($) {
   $.fn.extend({
     socialFlair : function(service, handler, options) { 
