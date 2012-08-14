@@ -14,8 +14,10 @@ This is a simple jQuery plugin which lets you embed social flairs into your pers
   * Create an App and get the details here: [https://developers.facebook.com/apps](https://developers.facebook.com/apps)
   * $(ele).socialFlair('facebook', 'facebookUsername', {clientId : clientId, clientSecret : clientSecrete});
 
-## Output
-![socialFlair](https://lh5.googleusercontent.com/-zt0PEhrhQhQ/T6AmTVx6prI/AAAAAAAAA58/KABJLr23bZY/s229/socialflair.gif)
+## Live Demo
+ * [Live Demo here](http://jsfiddle.net/codef0rmer/wzpNB/embedded/result/)
+
+ ![socialFlair](https://lh5.googleusercontent.com/-zt0PEhrhQhQ/T6AmTVx6prI/AAAAAAAAA58/KABJLr23bZY/s229/socialflair.gif)
 
 
 ## Contributions for the open issues welcome
