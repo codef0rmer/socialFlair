@@ -7,6 +7,7 @@
 <body>
   <div id='twitterFlair'></div>
   <div id='githubFlair'></div>
+  <div id='bitbucketFlair'></div>
   <div id='facebookFlair'></div>
   
   <script src='js/jquery.min.js'></script>
@@ -15,6 +16,7 @@
     $(function () {
       $('#twitterFlair').socialFlair('twitter', 'username', {});
       $('#githubFlair').socialFlair('github', 'username', {});
+      $('#bitbucketFlair').socialFlair('bitbucket', 'username', {});
       $('#facebookFlair').socialFlair('facebook', 'username', { 
         clientId : 'clientId', 
         clientSecret : 'clientSecrete'

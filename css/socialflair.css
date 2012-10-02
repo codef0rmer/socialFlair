@@ -19,6 +19,11 @@
   border : 1px solid #D4D4D4;
   background-color: #ececec;
 }
+.sfBitbucket {
+  background : url(../img/bitbucket-watermark.png) no-repeat right bottom;
+  border : 1px solid #D4D4D4;
+  background-color: #ececec;
+}
 .sfRow {
   display : table-row;
   width : 100%;
@@ -69,11 +74,23 @@
   padding-left : 20px;
 }
 .sfGithub .sfCell2 div.sfFans span.public_repos { 
-  background : url(../img/github_repos.gif) no-repeat left center; 
+  background : url(../img/repos.gif) no-repeat left center; 
   padding-left : 20px;
 }
 .sfGithub .sfCell2 div.sfFans span.followers { 
   background : url(../img/githubr.ico) no-repeat left center; 
+  padding-left : 20px;
+}
+.sfBitbucket .sfCell2 div.sfFans span.public_repos { 
+  background : url(../img/repos.gif) no-repeat left center; 
+  padding-left : 20px;
+}
+.sfBitbucket .sfCell2 div.sfFans span.followers { 
+  background : url(../img/bitbucket.ico) no-repeat left center; 
+  padding-left : 20px;
+}
+.sfFacebook .sfCell2 div.sfFans span.following { 
+  background : url(../img/friends.gif) no-repeat left center; 
   padding-left : 20px;
 }
 .sfFacebook .sfCell2 div.sfFans span.following { 

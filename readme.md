@@ -10,6 +10,9 @@ This is a simple jQuery plugin which lets you embed social flairs into your pers
 * Github Flair: 
   * $(ele).socialFlair('github', 'githubUsername', {});
 
+* Bitbucket Flair: 
+  * $(ele).socialFlair('bitbucket', 'bitbucketUsername', {});
+
 * Facebook Flair:
   * Create an App and get the details here: [https://developers.facebook.com/apps](https://developers.facebook.com/apps)
   * $(ele).socialFlair('facebook', 'facebookUsername', {clientId : clientId, clientSecret : clientSecrete});
