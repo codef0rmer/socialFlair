@@ -95,7 +95,7 @@
                 "  <img class='sfProfilePic' src='" + data.data.avatar_url + "' width='48px' height='48px' />" +
                 " </div>" +
                 " <div class='sfCell2'>" +
-                "  <div class='sfHandle'>" + truncateName(data.data.name) + "</div>" +
+                "  <div class='sfHandle'>" + truncateName(data.data.name || data.data.login) + "</div>" +
                 "  <div class='sfFans'>" +
                 "   <span class='public_repos' alt='Public Repositories' title='Public Repositories'>" + public_repos + "</span>" +
                 "   <span class='followers' alt='Followers' title='Followers'>" + followers + "</span>" +
