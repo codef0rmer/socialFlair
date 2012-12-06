@@ -95,7 +95,7 @@
                 "  <img class='sfProfilePic' src='" + data.data.avatar_url + "' width='48px' height='48px' />" +
                 " </div>" +
                 " <div class='sfCell2'>" +
-                "  <div class='sfHandle'>" + truncateName(data.data.name) + "</div>" +
+                "  <div class='sfHandle'>" + truncateName(data.data.name || data.data.login) + "</div>" +
                 "  <div class='sfFans'>" +
                 "   <span class='public_repos' alt='Public Repositories' title='Public Repositories'>" + public_repos + "</span>" +
                 "   <span class='followers' alt='Followers' title='Followers'>" + followers + "</span>" +
@@ -104,6 +104,38 @@
                 "</div>" +
                 "</div></div>​</a>"
               );
+            }
+          });
+        } else if (service === 'bitbucket' && handler !== undefined) {
+          // BitBucket API
+          $.ajax({
+            url : 'https://api.bitbucket.org/1.0/users/' + handler + '/followers',
+            method : 'get',
+            dataType : 'jsonp',
+            success : function (data) {
+              var followers = data.count;
+              $.ajax({
+                url : 'https://api.bitbucket.org/1.0/users/' + handler,
+                method : 'get',
+                dataType : 'jsonp',
+                success : function (data) {
+                  var public_repos = data.repositories.length;
+                  $ele.html(
+                    "<a class='sfLink' href='https://bitbucket.org/" + data.user.username +"'><div class='sfTable sfBitbucket'><div class='sfRow'>" +
+                    " <div class='sfCell1'>" +
+                    "  <img class='sfProfilePic' src='" + data.user.avatar + "' width='48px' height='48px' />" +
+                    " </div>" +
+                    " <div class='sfCell2'>" +
+                    "  <div class='sfHandle'>" + truncateName(data.user.username) + "</div>" +
+                    "  <div class='sfFans'>" +
+                    "   <span class='public_repos' alt='Public Repositories' title='Public Repositories'>" + public_repos + "</span>" +
+                    "   <span class='followers' alt='Followers' title='Followers'>" + followers + "</span>" +
+                    "  </div>" +
+                    "</div>" +
+                    "</div></div>​</a>"
+                  );
+                }
+              });
             }
           });
         } else if (service === 'facebook' && handler !== undefined) {
