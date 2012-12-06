@@ -20,7 +20,7 @@ This is a simple jQuery plugin which lets you embed social flairs into your pers
 ## Live Demo
  * [Live Demo here](http://jsfiddle.net/codef0rmer/wzpNB/embedded/result/)
 
- ![socialFlair](http://www.diigo.com/item/t/1924889_146299510_8721297)
+ ![socialFlair](http://s3.amazonaws.com/diigo/1924889_146299510_8721297?AWSAccessKeyId=0R7FMW7AXRVCYMAPTPR2&Expires=1354810121&Signature=PnnTr25KbD0xt6eSaePObjGFd2I%3D)
 
 
 ## Contributions for the open issues welcome
