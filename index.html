@@ -9,6 +9,7 @@
   <div id='githubFlair'></div>
   <div id='bitbucketFlair'></div>
   <div id='facebookFlair'></div>
+  <div id='bitbucketFlair'></div>
   
   <script src='js/jquery.min.js'></script>
   <script src='js/jquery.socialflair.js'></script>		
@@ -21,6 +22,7 @@
         clientId : 'clientId', 
         clientSecret : 'clientSecrete'
       });
+      $('#bitbucketFlair').socialFlair('bitbucket', 'username', {});
     });
   </script>	
 </body>

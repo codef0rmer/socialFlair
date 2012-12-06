@@ -20,7 +20,7 @@ This is a simple jQuery plugin which lets you embed social flairs into your pers
 ## Live Demo
  * [Live Demo here](http://jsfiddle.net/codef0rmer/wzpNB/embedded/result/)
 
- ![socialFlair](https://lh5.googleusercontent.com/-zt0PEhrhQhQ/T6AmTVx6prI/AAAAAAAAA58/KABJLr23bZY/s229/socialflair.gif)
+ ![socialFlair](http://www.diigo.com/item/t/1924889_146299510_8721297)
 
 
 ## Contributions for the open issues welcome
@@ -28,7 +28,6 @@ This is a simple jQuery plugin which lets you embed social flairs into your pers
 This is my first opensource project so I would really like to have your suggestions.  
 * Features are welcome too. 
 * Need to provide support for other well-known social sites including Google+, LinkedIn, HackerNews etc. 
-
 
 ## License
 * [Mozilla Public License](http://www.mozilla.org/MPL/)
